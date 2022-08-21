@@ -1,3 +1,4 @@
 
 def add(number):
-    return 
+    if len(number.strip()) == 0:
+        return 0
