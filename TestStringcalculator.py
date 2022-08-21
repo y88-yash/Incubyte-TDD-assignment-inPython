@@ -18,4 +18,4 @@ class TestStringcalculator(unittest.TestCase):
     # Allow the add method to handle an unknown amount of numbers
     def test_multiple_string(self):
         '''It should retrun the sum of unknow amount of number'''
-        self.assertEqual(String_Calculator.add("1,2,3"),7)
+        self.assertEqual(String_Calculator.add("1,2,3"),6)
