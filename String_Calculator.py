@@ -20,10 +20,17 @@ def add(number):
             if(not i.isdigit()):
                 sum+=(ord(i)-96)
             else:
-                if(not int(i) > 1000):
+                if(not int(i) == 1000):
                     sum+=int(i)
         return sum
-    
+    # ignore 1000
+    elif len(number) >=1:
+        token = number.split(",")
+        sum=0
+        for i in token:
+            if(not int(i)==1000):
+                sum+=int(i)
+        return sum
     # Handling unknow amount of string
     # elif len(number) >= 2:
     #     token=number.split(",")

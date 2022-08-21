@@ -29,3 +29,8 @@ class TestStringcalculator(unittest.TestCase):
     Note: Use lowercase alphabets only.'''
     def test_aplhanumberic(self):
         self.assertEqual(String_Calculator.add("a,b,c,1"),7)
+    
+    #Numbers bigger than 1000 should be ignored.
+    def test_numberbiggerthan_1000(self):
+        '''It should ignore number bigger than 1000'''
+        self.assertEqual(String_Calculator.add("2,1001"),2)
