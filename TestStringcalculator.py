@@ -9,4 +9,4 @@ class TestStringcalculator(unittest.TestCase):
 
     def test_single_string(self):
         '''It should return 1 if the string is 1'''
-        self.assertEqual(String_Calculator.add("1,2"),1)
+        self.assertEqual(String_Calculator.add("1"),1)
