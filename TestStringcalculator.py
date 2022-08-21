@@ -43,4 +43,6 @@ class TestStringcalculator(unittest.TestCase):
         '''It should raise an exception containing all negative number if any are found'''
         with self.assertRaises(Exception):
             String_Calculator.add("-1,-2,-3,1,2,3")
-
+    def test_new_line_as_delimiter(self):
+        '''It should be able to use new line as delimiter'''
+        self.assertEqual(String_Calculator.add("1\n2,3"),5)
