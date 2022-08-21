@@ -19,3 +19,13 @@ class TestStringcalculator(unittest.TestCase):
     def test_multiple_string(self):
         '''It should retrun the sum of unknow amount of number'''
         self.assertEqual(String_Calculator.add("1,2,3"),6)
+    
+    '''Allow alphabets to be included with numbers.
+    The numeric value for the alphabet would be equal to its position.
+    Such as a = 1, b = 2, c = 3 … y = 25, z = 26.
+    For example:
+    Input: "1,2,a,c"
+    Output: 7 (1 + 2 + 1 + 3)
+    Note: Use lowercase alphabets only.'''
+    def test_aplhanumberic(self):
+        self.assertEqual(String_Calculator.add("a,b,c"),6)

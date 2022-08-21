@@ -13,6 +13,19 @@ def add(number):
             sum += i
         return sum
     
+    elif len(number) >= 1:
+        token=number.split(",")
+        sum=0
+        for i in token:
+            if(not i.isdigit()):
+                sum+=(ord(i)-96)
+            # elif(i.isdigit()):
+            #     sum += i
+            else:
+                if(not int(i) > 1000):
+                    sum+=int(i)
+        return sum
+    
     # Handling unknow amount of string
     # elif len(number) >= 2:
     #     token=number.split(",")
