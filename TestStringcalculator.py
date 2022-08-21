@@ -13,4 +13,4 @@ class TestStringcalculator(unittest.TestCase):
     
     def test_double_string(self):
         '''It should return the sum of given string like 1+2=3'''
-        self.assertEqual(String_Calculator.add("1,2"),4)
+        self.assertEqual(String_Calculator.add("1,2"),3)
