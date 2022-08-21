@@ -1,5 +1,6 @@
 
 def add(number):
+    Negative_number=filter(lambda x:x < 0,number)
     if len(number.strip()) == 0:
         return 0
     # elif len(number) == 1:
@@ -23,6 +24,8 @@ def add(number):
                 if(not int(i) >1000):
                     sum+=int(i)
         return sum
+    elif Negative_number:
+        raise Exception('Negative not allowed '+str(Negative_number))
     # ignore 1000
     # elif len(number) >=1:
     #     token = number.split(",")

@@ -34,3 +34,8 @@ class TestStringcalculator(unittest.TestCase):
     def test_numberbiggerthan_1000(self):
         '''It should ignore number bigger than 1000'''
         self.assertEqual(String_Calculator.add("4,1001"),4)
+    
+    def test_negative_number_exception(self):
+        '''It should raise an exception containing all negative number if any are found'''
+        with self.assertRaises(Exception):
+            String_Calculator.add('-1')
