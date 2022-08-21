@@ -39,3 +39,8 @@ class TestStringcalculator(unittest.TestCase):
         '''It should raise an exception containing all negative number if any are found'''
         with self.assertRaises(Exception):
             String_Calculator.add('-1')
+    def test_MultipleNegative_number_exception(self):
+        '''It should raise an exception containing all negative number if any are found'''
+        with self.assertRaises(Exception):
+            String_Calculator.add("-1,-2,-3,1,2,3")
+

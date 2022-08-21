@@ -1,5 +1,6 @@
 
 def add(number):
+    # Negative_number=filter(lambda x:x < 0,number)
     Negative_number=filter(lambda x:x < 0,number)
     if len(number.strip()) == 0:
         return 0
