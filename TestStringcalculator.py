@@ -14,3 +14,8 @@ class TestStringcalculator(unittest.TestCase):
     def test_double_string(self):
         '''It should return the sum of given string like 1+2=3'''
         self.assertEqual(String_Calculator.add("1,2"),3)
+    
+    # Allow the add method to handle an unknown amount of numbers
+    def test_multiple_string(self):
+        '''It should retrun the sum of unknow amount of number'''
+        self.assertEqual(String_Calculator.add("1,2,3"),7)
