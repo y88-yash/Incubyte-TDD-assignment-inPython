@@ -2,6 +2,7 @@
 def add(number):
     # Negative_number=filter(lambda x:x < 0,number)
     Negative_number=filter(lambda x:x < 0,number)
+    # number = number.replace("\n",",")
     number = number.replace("\n",",")
     if len(number.strip()) == 0:
         return 0
