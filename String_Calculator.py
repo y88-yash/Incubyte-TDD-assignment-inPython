@@ -13,10 +13,11 @@ def add(number):
             sum += i
         return sum
     
-    elif len(number) >= 2:
-        token=number.split(",")
-        sumoftwostring=list(map(int,token))
-        sum=0
-        for i in sumoftwostring:
-            sum += i
-        return sum
+    # Handling unknow amount of string
+    # elif len(number) >= 2:
+    #     token=number.split(",")
+    #     sumoftwostring=list(map(int,token))
+    #     sum=0
+    #     for i in sumoftwostring:
+    #         sum += i
+    #     return sum
