@@ -5,13 +5,13 @@ def add(number):
     # elif len(number) == 1:
     #     return int(number)
     
-    elif len(number) >= 1:
-        token=number.split(",")
-        sumoftwostring=list(map(int,token))
-        sum=0
-        for i in sumoftwostring:
-            sum += i
-        return sum
+    # elif len(number) >= 1:
+    #     token=number.split(",")
+    #     sumoftwostring=list(map(int,token))
+    #     sum=0
+    #     for i in sumoftwostring:
+    #         sum += i
+    #     return sum
     
     elif len(number) >= 1:
         token=number.split(",")
@@ -19,8 +19,6 @@ def add(number):
         for i in token:
             if(not i.isdigit()):
                 sum+=(ord(i)-96)
-            # elif(i.isdigit()):
-            #     sum += i
             else:
                 if(not int(i) > 1000):
                     sum+=int(i)

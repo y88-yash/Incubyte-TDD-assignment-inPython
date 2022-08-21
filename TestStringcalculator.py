@@ -28,4 +28,4 @@ class TestStringcalculator(unittest.TestCase):
     Output: 7 (1 + 2 + 1 + 3)
     Note: Use lowercase alphabets only.'''
     def test_aplhanumberic(self):
-        self.assertEqual(String_Calculator.add("a,b,c"),6)
+        self.assertEqual(String_Calculator.add("a,b,c,1"),7)
